@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Manrope";
+  font-weight: 800;
+  src: url("./assets/Manrope/Manrope-VariableFont_wght.ttf");
+}
+
+.icon-dice:hover {
+  box-shadow: 0 0 15px 5px hsla(150, 100%, 66%, 0.5);
+}
