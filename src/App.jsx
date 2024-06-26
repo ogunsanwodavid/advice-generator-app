@@ -59,6 +59,7 @@ function App() {
     <div className="relative w-full min-h-screen font-extrabold font-manrope bg-darkBlue">
       <main className="absolute top-[50%] left-[50%] translate-x-[-50%] -translate-y-[50%] w-[calc(100%-2rem)] max-w-[400px]">
         <div className="relative w-full p-5 pb-12 mx-auto bg-darkGrayishBlue rounded-lg text-lightCyan text-center">
+          {/*** Render only if quote isnt empty */}
           {quote.slip && (
             <>
               {/** Heading */}
@@ -85,6 +86,7 @@ function App() {
             src={isDesktopWidth ? patternDividerDesktop : patternDividerMobile}
             className="w-full mt-5 md:mt-7"
           />
+
           {/** Dice icon */}
           <div
             className="icon-dice absolute left-[50%] bottom-0 translate-x-[-50%] translate-y-[50%] bg-neonGreen p-3 rounded-full cursor-pointer md:p-4"
